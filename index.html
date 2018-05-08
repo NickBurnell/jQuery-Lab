@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Table Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+</head>
+
+<body>
+    <section id="header">
+        <h1>Table Finder</h1>
+        <p>Pick your table now</p>
+    </section>
+    <section id="tablesContainer">
+        <section class="container1">
+            <section id="table1" class="available">
+                <p>1</p>
+            </section>
+            <section id="table2" class="available">
+                <p>2</p>
+            </section>
+            <section id="table3" class="available">
+                <p>3</p> 
+            </section>
+        </section>
+
+        <section class="container2">
+            <section id="table4" class="available">
+                <p>4</p>
+            </section>
+            <section id="table5" class="available">
+                <p>5</p>
+            </section>
+            <section id="table6" class="available">
+                <p>6</p>
+            </section>
+        </section>
+
+        <section class="container3">
+            <section id="table7" class="available">
+                <p>7</p>
+            </section>
+            <section id="table8" class="available">
+                <p>8</p>
+            </section>
+            <section id="table9" class="available">
+                <p>9</p>
+            </section>
+        </section>
+    </section>
+
+    <form class="reserveNow">
+        <button type="button" id="exitBtn"><i class="material-icons">clear</i></button>
+        <h2>New Reservation</h2>
+        <p class="tableNumber"></p>
+        <section>
+            <input id="name" type="text" placeholder="Name..">
+        </section>
+        <section>
+            <input id="phone" type="text" placeholder="phone Number..">
+        </section>
+        <section>
+            <input id="size" type="text" placeholder="Size Of Party..">
+        </section>
+        <button type="button" id="saveBtn">SAVE</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
