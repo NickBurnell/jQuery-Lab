@@ -49,7 +49,7 @@ $(document).ready(() => {
         console.log(info.size);
         
     }).on('mouseleave', (event) => {
-
+        $('.hoverData').css('display: none;')
     });
 
 });
