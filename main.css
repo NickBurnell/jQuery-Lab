@@ -14,7 +14,7 @@ h1 {
     text-align: center;
 }
 #tablesContainer {
-    width: 300px;
+    width: 255px;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -67,9 +67,7 @@ h1 {
     align-items: center;
     cursor: not-allowed;
 }
-.reserved:hover {
-    background-color: rgb(218, 15, 15);
-}
+
 .reserveNow {
     display: none;
     position: fixed;
@@ -82,12 +80,12 @@ h1 {
     height: 70vh;
     padding: 10px;
     box-shadow: 0px 0px 31px rgba(0,0,0,0.3);
-    /* margin-left: -100px; */
+    margin: 0 auto;
 }
 section input {
     width: 100%;
     height: 20px;
-    margin: 40px auto;
+    margin: 30px auto;
     border: none;
     border-bottom: solid darkgray 3px;
 }
@@ -108,4 +106,78 @@ section input {
     background-color: white;
     border: none;
     cursor: pointer;
+}
+.reserved .hoverData {
+    display: none;
+}
+.reserved:hover .hoverData {
+    position: relative;
+    display: block;
+    color: black;
+    width: 63px;
+    background-color: #ADAAAA;
+    border: solid 1px black;
+    border-top: none;
+    z-index: 1;
+}
+@media screen and (min-width: 768px) {
+    #header {
+        font-size: 25px;
+    }
+    .reserveNow {
+        width: 50%;
+        height: auto;
+        left: 180px;
+        font-size: 25px;
+    }
+    section input {
+        margin: 25px auto;
+    }
+    #saveBtn {
+        margin-bottom: 15px;
+    }
+    #tablesContainer {
+        width: 475px;
+        height: 320px;
+    }
+    .available {
+        width: 100px;
+        height: 100px;
+    }
+    .reserved {
+        width: 100px;
+        height: 100px;
+    }
+    .reserved:hover .hoverData {
+        width: 88px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    #header {
+        font-size: 25px;
+    }
+    .reserveNow {
+        width: 50%;
+        height: auto;
+        left: 290px;
+        font-size: 25px;
+    }
+    #tablesContainer {
+        width: 600px;
+        height: 490px;
+    }
+    .available {
+        width: 150px;
+        height: 150px;
+    }
+    .reserved {
+        width: 150px;
+        height: 150px;
+    }
+    .reserved:hover .hoverData {
+        width: 135px;
+    }
+
 }
